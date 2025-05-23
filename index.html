@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8" />
+  <title>General Admission Registration</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    form {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .section {
+      width: 45%;
+      min-width: 300px;
+    }
+
+    .field {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+    }
+
+    .radio-group {
+      margin-left: 10px;
+    }
+
+    .radio-group label {
+      display: block;
+      font-weight: normal;
+      margin: 3px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>General Admission Registration</h2>
+
+  <form>
+    <!-- Left Section -->
+    <div class="section">
+      <div class="field">
+        <label>Name</label>
+        <input type="text" placeholder="First Name" />
+        <input type="text" placeholder="Last Name" />
+      </div>
+
+      <div class="field">
+        <label>Email</label>
+        <input type="email" placeholder="sample@example.com" />
+      </div>
+
+      <div class="field">
+        <label>Gender</label>
+        <div class="radio-group">
+          <label><input type="radio" name="gender" /> Male</label>
+          <label><input type="radio" name="gender" /> Female</label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label>Phone</label>
+        <input type="text" />
+      </div>
+
+      <div class="field">
+        <label>Emergency Contact</label>
+        <input type="text" />
+      </div>
+
+      <div class="field">
+        <label>Do you require parking?</label>
+        <div class="radio-group">
+          <label><input type="radio" name="parking" /> Yes</label>
+          <label><input type="radio" name="parking" /> No</label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label>What is your room preference?</label>
+        <div class="radio-group">
+          <label><input type="radio" name="room" /> Single Room</label>
+          <label><input type="radio" name="room" /> Shared Room</label>
+          <label><input type="radio" name="room" /> No Room Needed</label>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Section -->
+    <div class="section">
+      <div class="field">
+        <label>Do you have dietary restrictions?</label>
+        <div class="radio-group">
+          <label><input type="radio" name="diet" /> None</label>
+          <label><input type="radio" name="diet" /> Vegetarian</label>
+          <label><input type="radio" name="diet" /> Glutten Allergy</label>
+          <label><input type="radio" name="diet" /> Lactose Allergy</label>
+          <label><input type="radio" name="diet" /> Nut Allergy</label>
+          <label><input type="radio" name="diet" /> Shellfish Allergy</label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label>What activities will you attend?</label>
+        <div class="radio-group">
+          <label><input type="radio" name="activity" /> Awards Gala Dinner</label>
+          <label><input type="radio" name="activity" /> Luncheon</label>
+          <label><input type="radio" name="activity" /> Town Hall</label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label>Do you want to see the list of other attendees and their profiles on the official event app?</label>
+        <div class="radio-group">
+          <label><input type="radio" name="attendees" /> Yes</label>
+          <label><input type="radio" name="attendees" /> No</label>
+        </div>
+      </div>
+    </div>
+  </form>
+
+</body>
+</html>
